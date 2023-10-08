@@ -1,0 +1,142 @@
+.header {
+    background-color: rgb(1, 26, 20);
+    height: 60px;
+    display: flex;
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+    padding-left: 15px;
+    padding-top: 15px;
+
+}
+
+.location-icon {
+    padding-top: 5px;
+}
+
+.deliver-detail {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.deliver-to {
+    color: white;
+    font-size: smaller;
+    padding-left: 23px;
+    padding-bottom: 0px;
+
+}
+
+.location {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
+
+.search-button {
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-right: 350px;
+    padding-bottom: 15px;
+}
+
+.header-option1 {
+    display: inline;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.header-option2 {
+    display: inline;
+    padding: 10px;
+}
+
+.header-option3 {
+    display: inline;
+    padding: 10px;
+}
+
+.header-optionLineOne {
+    color: white;
+    font-size: small;
+}
+
+.header-optionLineTwo {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ALL {
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 50px;
+    height: 35.5px;
+    background-color: gray;
+}
+
+.Selector {
+    margin-right: -17px;
+    margin-left: 15px;
+}
+
+.search-button-div {
+    margin-left: -2px;
+}
+
+.search-click {
+    background-color: orange;
+    border: solid orange;
+    margin-top: 15px;
+    padding: 3px;
+    padding-top: 5.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-option1 {
+    background-color: rgb(1, 26, 20);
+    color: white;
+    border: solid rgb(1, 26, 20);
+    margin-top: 15px;
+}
+
+.button-option {
+    background-color: rgb(1, 26, 20);
+    color: white;
+    border: solid rgb(1, 26, 20);
+}
+
+.button-option:hover {
+    border: solid white;
+}
+
+.button-option1:hover {
+    border: solid white;
+}
+
+.shop-icon {
+    background-color: rgb(1, 26, 20);
+    border: solid rgb(1, 26, 20);
+    margin-top: 10px;
+}
+
+.shop-icon:hover {
+    border: solid white;
+}
+
+.header-basketCount {
+    color: white;
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+.home-image {
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -290px;
+
+}

@@ -1,0 +1,35 @@
+.checkoutP {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.checkoutP-info {
+    padding-left: 30px;
+}
+
+.remove-btn {
+    background: #f0c14b;
+    border: 1px soild;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    margin-left: 30px;
+}
+
+.img-checkout {
+    width: 200px;
+    height: auto;
+}
+
+.checkoutP-rating {
+    display: flex;
+    padding-left: 30px;
+    margin-top: -20px;
+}
+
+.checkoutP-title {
+    width: 200px;
+    padding-left: 30px;
+
+}

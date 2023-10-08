@@ -1,0 +1,61 @@
+.img-logo {
+    margin-left: 45%;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    width: 50px;
+    height: auto;
+}
+
+.header-logo-login {
+    margin: 20px;
+    width: 134px;
+    height: auto;
+}
+
+.main-login {
+    margin-left: 39%;
+    width: 300px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.reciever {
+    padding: 6px;
+    width: 270px;
+    margin-left: 3%;
+    margin-right: 6%;
+    border: 2px inset black;
+}
+
+.nameOfInputs {
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 3px;
+    font-size: smaller;
+}
+
+.signIN {
+    padding: 6px;
+    width: 286px;
+    margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 6%;
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+}
+
+.textAgreement>p {
+    margin-top: 10px;
+    margin-left: 3%;
+    font-size: 11.5px;
+}
+
+.createacc {
+    padding: 6px;
+    width: 286px;
+    margin-left: 3%;
+    margin-right: 6%;
+    border: 1px inset black;
+}
