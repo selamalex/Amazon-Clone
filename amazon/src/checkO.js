@@ -20,6 +20,7 @@ price={item.price}
 rating={item.rating}
 />
 
+
 ))}
             </div>
             <div className='checkout-right'>

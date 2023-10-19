@@ -1,0 +1,850 @@
+[debug] [2023-10-14T10:59:26.532Z] ----------------------------------------------------------------------
+[debug] [2023-10-14T10:59:26.534Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-10-14T10:59:26.534Z] CLI Version:   12.7.0
+[debug] [2023-10-14T10:59:26.534Z] Platform:      win32
+[debug] [2023-10-14T10:59:26.535Z] Node Version:  v18.17.0
+[debug] [2023-10-14T10:59:26.535Z] Time:          Sat Oct 14 2023 13:59:26 GMT+0300 (East Africa Time)
+[debug] [2023-10-14T10:59:26.536Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-14T10:59:26.675Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-14T10:59:26.675Z] > authorizing via signed-in user (selamalex95@gmail.com)
+[debug] [2023-10-14T10:59:26.739Z] java version "17.0.7" 2023-04-18 LTS
+
+[debug] [2023-10-14T10:59:26.740Z] Java(TM) SE Runtime Environment (build 17.0.7+8-LTS-224)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.7+8-LTS-224, mixed mode, sharing)
+
+[debug] [2023-10-14T10:59:26.749Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: functions, firestore, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, hosting"}}
+[debug] [2023-10-14T10:59:26.762Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-14T10:59:26.762Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-14T10:59:26.763Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-14T10:59:26.763Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-14T10:59:26.763Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-10-14T10:59:26.776Z] [hub] writing locator at C:\Users\RYZEN3\AppData\Local\Temp\hub-clone-3609e.json
+[debug] [2023-10-14T10:59:26.785Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-14T10:59:26.785Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-14T10:59:26.785Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-10-14T10:59:26.790Z] defaultcredentials: writing to file C:\Users\RYZEN3\AppData\Roaming\firebase\selamalex95_gmail_com_application_default_credentials.json
+[debug] [2023-10-14T10:59:26.793Z] Setting GAC to C:\Users\RYZEN3\AppData\Roaming\firebase\selamalex95_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\RYZEN3\\AppData\\Roaming\\firebase\\selamalex95_gmail_com_application_default_credentials.json"}}
+[debug] [2023-10-14T10:59:26.796Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-3609e/adminSdkConfig [none]
+[debug] [2023-10-14T10:59:27.642Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-3609e/adminSdkConfig 200
+[debug] [2023-10-14T10:59:27.643Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-3609e/adminSdkConfig {"projectId":"clone-3609e","databaseURL":"https://clone-3609e-default-rtdb.firebaseio.com","storageBucket":"clone-3609e.appspot.com"}
+[warn] !  firestore: Cloud Firestore rules file C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\firestore.rules specified in firebase.json does not exist. {"metadata":{"emulator":{"name":"firestore"},"message":"Cloud Firestore rules file \u001b[1mC:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\firestore.rules\u001b[22m specified in firebase.json does not exist."}}
+[warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2023-10-14T10:59:27.675Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-10-14T10:59:27.675Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2023-10-14T10:59:27.675Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\RYZEN3\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.18.2.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","clone-3609e","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\RYZEN3\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.18.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"clone-3609e\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2023-10-14T10:59:28.731Z] Oct 14, 2023 1:59:28 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 14, 2023 1:59:28 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\r\nINFO: Started WebSocket server on ws://127.0.0.1:9150\r\n"}}
+[debug] [2023-10-14T10:59:28.768Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2023-10-14T10:59:28.768Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nDev App Server is now running.\n\r\n"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2023-10-14T10:59:28.992Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-3609e/sites 
+[debug] [2023-10-14T10:59:30.445Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-3609e/sites 200
+[debug] [2023-10-14T10:59:30.446Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-3609e/sites {"sites":[{"name":"projects/clone-3609e/sites/clone-3609e","defaultUrl":"https://clone-3609e.web.app","appId":"1:686601209954:web:0b954bda453affe399293b","type":"DEFAULT_SITE"}]}
+[debug] [2023-10-14T10:59:30.446Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-3609e/webApps/1:686601209954:web:0b954bda453affe399293b/config [none]
+[debug] [2023-10-14T10:59:31.632Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-3609e/webApps/1:686601209954:web:0b954bda453affe399293b/config 200
+[debug] [2023-10-14T10:59:31.632Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-3609e/webApps/1:686601209954:web:0b954bda453affe399293b/config {"projectId":"clone-3609e","appId":"1:686601209954:web:0b954bda453affe399293b","databaseURL":"https://clone-3609e-default-rtdb.firebaseio.com","storageBucket":"clone-3609e.appspot.com","apiKey":"AIzaSyDO0gXO0VJVRVgKxQOlUFDcN1L6fjBWz1Y","authDomain":"clone-3609e.firebaseapp.com","messagingSenderId":"686601209954","measurementId":"G-YH5H4P8YWJ"}
+[debug] [2023-10-14T10:59:31.650Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-3609e [none]
+[debug] [2023-10-14T10:59:32.451Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-3609e 200
+[debug] [2023-10-14T10:59:32.452Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-3609e {"projectId":"clone-3609e","projectNumber":"686601209954","displayName":"Amazon-Clone","name":"projects/clone-3609e","resources":{"hostingSite":"clone-3609e","realtimeDatabaseInstance":"clone-3609e-default-rtdb"},"state":"ACTIVE","etag":"1_8272d47a-15dc-4c34-a9e5-adc4ee2243b2"}
+[debug] [2023-10-14T10:59:32.453Z] Specified "public" directory "_site" does not exist; Deploy to Hosting site "clone-3609e" may fail or be empty.
+[info] i  hosting[clone-3609e]: Serving hosting files from: _site {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m_site\u001b[22m"}}
+[info] +  hosting[clone-3609e]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-10-14T10:59:32.474Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-10-14T10:59:32.474Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-10-14T10:59:32.474Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\RYZEN3\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\RYZEN3\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-10-14T10:59:32.601Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-10-14T10:59:32.601Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\" for Cloud Functions..."}}
+[debug] [2023-10-14T10:59:32.755Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T10:59:32.758Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T10:59:32.758Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T10:59:32.759Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T10:59:32.759Z] Building nodejs source
+[debug] [2023-10-14T10:59:32.760Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T10:59:32.761Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-10-14T11:03:14.584Z] Oct 14, 2023 2:03:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 14, 2023 2:03:14 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2023-10-14T11:20:41.514Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T11:20:42.526Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:20:42.528Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:20:42.529Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:20:42.530Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:20:42.530Z] Building nodejs source
+[debug] [2023-10-14T11:20:42.530Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:20:42.532Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an unknown problem while trying to parse function triggers. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an unknown problem while trying to parse function triggers."}}
+[debug] [2023-10-14T11:21:45.677Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T11:21:46.684Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:21:46.685Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:21:46.686Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:21:46.687Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:21:46.687Z] Building nodejs source
+[debug] [2023-10-14T11:21:46.687Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:21:46.688Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[debug] [2023-10-14T11:21:46.728Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an unknown problem while trying to parse function triggers. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an unknown problem while trying to parse function triggers."}}
+[debug] [2023-10-14T11:21:47.735Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:21:47.738Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:21:47.738Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:21:47.739Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:21:47.739Z] Building nodejs source
+[debug] [2023-10-14T11:21:47.739Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:21:47.740Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an unknown problem while trying to parse function triggers. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an unknown problem while trying to parse function triggers."}}
+[debug] [2023-10-14T11:43:41.629Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T11:43:42.633Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:43:42.635Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:43:42.635Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:43:42.646Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:43:42.647Z] Building nodejs source
+[debug] [2023-10-14T11:43:42.647Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:43:42.648Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T11:48:31.508Z] Oct 14, 2023 2:48:31 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 14, 2023 2:48:31 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}
+[debug] [2023-10-14T11:49:04.055Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T11:49:05.063Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:49:05.065Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:49:05.065Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:49:05.077Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:49:05.077Z] Building nodejs source
+[debug] [2023-10-14T11:49:05.077Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:49:05.079Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an unknown problem while trying to parse function triggers. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an unknown problem while trying to parse function triggers."}}
+[debug] [2023-10-14T11:50:32.625Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T11:50:33.636Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:50:33.638Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:50:33.638Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:50:33.639Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:50:33.639Z] Building nodejs source
+[debug] [2023-10-14T11:50:33.639Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:50:33.640Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T11:50:56.627Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T11:50:57.631Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:50:57.644Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:50:57.644Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:50:57.645Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:50:57.645Z] Building nodejs source
+[debug] [2023-10-14T11:50:57.645Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:50:57.646Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T11:51:27.832Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T11:51:28.846Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:51:28.848Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:51:28.848Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:51:28.849Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:51:28.850Z] Building nodejs source
+[debug] [2023-10-14T11:51:28.850Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:51:28.851Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T11:51:35.070Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T11:51:36.072Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:51:36.073Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:51:36.074Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:51:36.074Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:51:36.075Z] Building nodejs source
+[debug] [2023-10-14T11:51:36.075Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:51:36.076Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T11:54:21.904Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T11:54:22.907Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T11:54:22.909Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T11:54:22.909Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T11:54:22.910Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T11:54:22.910Z] Building nodejs source
+[debug] [2023-10-14T11:54:22.910Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T11:54:22.912Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T12:01:02.119Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T12:01:03.133Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T12:01:03.136Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T12:01:03.136Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T12:01:03.137Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T12:01:03.137Z] Building nodejs source
+[debug] [2023-10-14T12:01:03.137Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T12:01:03.137Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T12:01:03.857Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T12:01:04.871Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T12:01:04.872Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T12:01:04.873Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T12:01:04.873Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T12:01:04.873Z] Building nodejs source
+[debug] [2023-10-14T12:01:04.873Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T12:01:04.877Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T12:01:39.686Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T12:01:40.694Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T12:01:40.695Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T12:01:40.695Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T12:01:40.696Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T12:01:40.696Z] Building nodejs source
+[debug] [2023-10-14T12:01:40.696Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T12:01:40.697Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T12:02:40.369Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T12:02:41.379Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T12:02:41.380Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T12:02:41.381Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T12:02:41.381Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T12:02:41.381Z] Building nodejs source
+[debug] [2023-10-14T12:02:41.381Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T12:02:41.382Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T12:04:06.645Z] File C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\RYZEN3\\Desktop\\Evangadi\\phase 3\\Final Projects\\Amazon clone\\Amazon-Clone\\amazon\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-10-14T12:04:07.646Z] Validating nodejs source
+[warn] !  functions: Couldn't find firebase-functions package in your source code. Have you run 'npm install'? 
+[debug] [2023-10-14T12:04:07.648Z] getFunctionsSDKVersion encountered error: Cannot find module 'firebase-functions'
+Require stack:
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\gcp\cloudfunctions.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\backend.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorShared.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\RYZEN3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js {"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\versioning.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\node\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\runtimes\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\gcp\\cloudfunctions.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\deploy\\functions\\backend.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorShared.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulator.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\controller.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\commandUtils.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\database-get.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\commands\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\index.js","C:\\Users\\RYZEN3\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\bin\\firebase.js"]}
+[debug] [2023-10-14T12:04:07.649Z] checkFunctionsSDKVersion encountered error: Invalid Version:  {}
+[debug] [2023-10-14T12:04:07.650Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-10-14T12:04:07.650Z] Building nodejs source
+[debug] [2023-10-14T12:04:07.650Z] Failed to find version of module node: reached end of search path C:\Users\RYZEN3\Desktop\Evangadi\phase 3\Final Projects\Amazon clone\Amazon-Clone\amazon\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-10-14T12:04:07.652Z] Could not parse firebase-functions version '' into semver. Falling back to parseTriggers.
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[debug] [2023-10-14T12:04:24.916Z] Received signal SIGHUP 1

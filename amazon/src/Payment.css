@@ -1,0 +1,8 @@
+.paymentProceed {
+    background-color: white;
+    margin-top: -25px;
+}
+
+.address-displayer {
+    display: flex;
+}
